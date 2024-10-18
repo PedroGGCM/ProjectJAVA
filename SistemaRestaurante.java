@@ -11,7 +11,7 @@ public class SistemaRestaurante {
     public static class Mesa {
         private int id;
         private int capacidade;
-        private List<Pedido> pedidos;  // Alterado para suportar múltiplos pedidos
+        private List<Pedido> pedidos;  
         private boolean status;
 
         public Mesa(int id, int capacidade, boolean status) {
@@ -38,8 +38,8 @@ public class SistemaRestaurante {
         }
 
         public void resetarMesa() {
-            pedidos.clear(); // Reseta todos os pedidos
-            status = true; // Status da mesa disponível
+            pedidos.clear(); 
+            status = true; 
         }
 
         public boolean verificarStatus() {
@@ -170,7 +170,7 @@ public class SistemaRestaurante {
         }
     }
 
-    // Classe Restaurante
+    
     public static class Restaurante {
         private static final List<Mesa> mesas = Arrays.asList(
                 new Mesa(1, 4, true),
