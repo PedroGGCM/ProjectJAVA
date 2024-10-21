@@ -20,12 +20,6 @@ O sistema de clínica médica foi desenvolvido com o objetivo de facilitar a adm
 3. **Qual a avaliação de cada médico feita pelos pacientes?**
    - Indicador direto de satisfação, ajuda na retenção de pacientes e na identificação de áreas onde os médicos precisam melhorar.
 
-4. **Qual a taxa de retorno dos pacientes para consultas de acompanhamento?**
-   - Avalia a fidelidade e a qualidade do tratamento oferecido, o que pode influenciar futuras decisões de investimentos em determinadas áreas médicas.
-
-5. **Quais os horários mais movimentados para marcação de consultas?**
-   - Otimiza a escala de médicos e equipe de apoio, ajustando a oferta de profissionais aos períodos de maior demanda.
-
 ### 2. Sistema de Gerenciamento de Eventos
 
 O sistema de eventos foi projetado para permitir a organização de eventos, controle de lotação e monitoramento de satisfação dos participantes. Ele ajuda a gerenciar a logística de cada evento e gerar insights financeiros para melhorar o planejamento de eventos futuros.
@@ -46,12 +40,6 @@ O sistema de eventos foi projetado para permitir a organização de eventos, con
 3. **Quais são os eventos mais populares e lucrativos?**
    - Identificar padrões de sucesso e repetir estratégias em eventos futuros, além de ajustar o orçamento para os eventos com menor retorno.
 
-4. **Como comparar os custos de organização com a receita gerada?**
-   - Permite analisar a rentabilidade de cada evento e entender quais áreas do planejamento precisam ser ajustadas.
-
-5. **Qual a taxa de não comparecimento nos eventos?**
-   - Essa métrica ajuda a ajustar o planejamento e prever o número real de participantes, evitando desperdício de recursos.
-
 ### 3. Sistema de Restaurante
 
 O sistema de gerenciamento de restaurantes foi construído para gerenciar mesas, pedidos e cardápios, com funcionalidades que permitem otimizar a operação do restaurante. O foco é aumentar a eficiência do atendimento e gerar relatórios detalhados sobre vendas, mesas ocupadas e itens do cardápio.
@@ -63,20 +51,15 @@ O sistema de gerenciamento de restaurantes foi construído para gerenciar mesas,
 - Análise de pedidos alterados ou devolvidos.
 
 #### Perguntas Chave para Tomada de Decisão:
-1. **Quais são os pratos e bebidas mais vendidos?**
-   - Ajuda no planejamento do estoque, garantindo que itens mais populares estejam sempre disponíveis, e possibilita a criação de promoções.
 
-2. **Qual é o ticket médio por mesa?**
-   - Facilita a criação de estratégias para aumentar o ticket médio, como promoções ou pacotes de pratos e bebidas.
+1. **Como controlar eficientemente as mesas?**
+   - O sistema permite verificar o status de cada mesa (disponível ou reservada), modificar esse status, e resetar a mesa após o uso. A classe `Mesa` gerencia as mesas com IDs fixos e armazena o status de cada mesa, facilitando o controle de disponibilidade e alocação eficiente.
 
-3. **Quais dias da semana geram maior receita para o restaurante?**
-   - Auxilia no planejamento de promoções ou eventos especiais para aumentar o movimento nos dias de menor receita.
+2. **Como organizar os pedidos de forma ágil?**
+   - O código permite que cada mesa tenha múltiplos pedidos, gerenciando pratos e bebidas de forma individual para cada mesa. A classe `Pedido` facilita a adição e remoção de itens, enquanto o menu é fixo, otimizando a escolha dos itens pelos clientes. Isso torna o processo de criação e organização dos pedidos ágil e organizado.
 
-4. **Quais mesas têm maior e menor rotatividade?**
-   - Permite otimizar a disposição das mesas no salão, ajustando o layout do restaurante para aumentar a eficiência no atendimento.
-
-5. **Quais pedidos foram mais alterados ou devolvidos?**
-   - Identifica possíveis problemas no cardápio ou no preparo dos pratos, oferecendo insights para melhorar a qualidade do serviço e a satisfação do cliente.
+3. **Como ter um gerenciamento dos valores total do pedido?**
+   - O valor total de cada pedido é calculado automaticamente com base nos itens selecionados. Cada vez que um prato ou bebida é adicionado ou removido, o valor total do pedido é ajustado. Isso é feito pela classe `Pedido`, que mantém controle sobre o preço acumulado dos itens, permitindo um gerenciamento preciso dos custos.
 
 ### Conclusão
 
