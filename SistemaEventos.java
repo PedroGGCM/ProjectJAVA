@@ -10,6 +10,8 @@ public class SistemaEventos {
     private static List<SistemaEventos.Local> listaLocal = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
 
+    //=================== CLASSES ===================//
+
     public static class Evento {
         private String nome;
         private Local local;
@@ -120,6 +122,8 @@ public class SistemaEventos {
         }
     }
 
+    //======================== MAIN ======================//
+
     public static void main(String[] args) {
 
         while (true) {
@@ -174,6 +178,9 @@ public class SistemaEventos {
             }
         }
     }
+
+    //======================= FUNÇÕES =======================//
+
 
     public static void cadastrarEventos() {
         System.out.println("Digite o nome do Evento: ");
@@ -359,14 +366,4 @@ public class SistemaEventos {
         }
 
     }
-
-
-
-
-
-
-
-
-
-
 }
