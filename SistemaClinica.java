@@ -393,7 +393,7 @@ public class SistemaClinica {
         Medico novoMedico = new Medico(nome, especialidade, disponivel);
         listaMedicos.add(novoMedico);
 
-        // Adiciona ou atualiza a contagem de especialidades
+       
         boolean found = false;
         for (EspecialidadeConsulta ec : listaEspecialidades) {
             if (ec.getEspecialidade().equals(especialidade)) {
@@ -680,7 +680,7 @@ public class SistemaClinica {
     public static void listarEspecialidadesPorConsultas() {
         List<String> especialidades = new ArrayList<>();
 
-        // Coletando especialidades únicas
+       
         for (Medico medico : listaMedicos) {
             if (!especialidades.contains(medico.getEspecialidade())) {
                 especialidades.add(medico.getEspecialidade());
