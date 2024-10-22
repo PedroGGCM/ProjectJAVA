@@ -13,7 +13,7 @@ public class SistemaClinica {
 
     public static class Paciente {
 
-        //Atributos
+       
         private String nome;
         private String cpf;
         private String endereco;
@@ -27,7 +27,6 @@ public class SistemaClinica {
 
         }
 
-        //Getters e Setters
         public String getNome() {
             return nome;
         }
